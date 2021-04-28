@@ -35,22 +35,22 @@
         </div>
     </div>
 
-    <button onclick="emran()">Show</button>
-    <button class="hide">Hide</button>
-    <button class="toggle">Toggle</button>
+    <button onclick="slideDown()">Slide Down</button>
+    <button class="slideUp">Slide Up</button>
+    <button class="slideToggle">Slide Toggle</button>
 
     <script src="jquery.min.js"></script>
     <script>
-        function emran() {
-            $('.anim').show(3000)
+        function slideDown() {
+            $('.anim').slideDown(3000)
         }
 
-        $('.hide').click(function() {
-            $('.anim').hide(3000)
+        $('.slideUp').click(function() {
+            $('.anim').slideUp(3000)
         })
 
-        $('.toggle').click(function() {
-            $('.anim').toggle(3000)
+        $('.slideToggle').click(function() {
+            $('.anim').slideToggle(3000)
         })
     </script>
 </body>
