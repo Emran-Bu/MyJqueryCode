@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .main{
+            border: 5px solid grey;
+            height: 200px;
+            width: 600px;
+            text-align: center;
+        }
+
+        .anim{
+            background-color: rgb(49, 0, 128);
+            height: 100%;
+            width: 100%;
+            border: 1px solid hotpink;
+            display: none;
+
+        }
+
+        button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="anim">
+            <h2>Hello</h2>
+        </div>
+    </div>
+
+    <button onclick="emran()">Fade In</button>
+    <button class="fadeOut">Fade Out</button>
+    <button class="fadeToggle">Fade Toggle</button>
+
+    <script src="jquery.min.js"></script>
+    <script>
+        function emran() {
+            $('.anim').fadeIn(4000)
+        }
+
+        $('.fadeOut').click(function() {
+            $('.anim').fadeOut(3000)
+        })
+
+        $('.fadeToggle').click(function() {
+            $('.anim').fadeToggle(3000)
+        })
+    </script>
+</body>
+</html>
