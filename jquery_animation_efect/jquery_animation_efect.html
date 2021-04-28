@@ -13,15 +13,6 @@
             border: 5px solid grey;
         }
 
-        .second-box {
-            height: 30%;
-            width: 30%;
-            border: 2px solid red;
-            color: white;
-            background-color: grey;
-            font-size: 30px;
-        }
-
         .control {
             border: 2px solid green;
             font-size: 30px;
@@ -38,32 +29,14 @@
 
     <p class="control">Control</p>
 
-
     <script src="jquery.min.js"></script>
     <script>
-        // let element = document.querySelector('.first-box');
-
-        // element.style.backgroundColor = 'yellow';
 
         $('.first-box').css("background-color", "red");
 
-        
         $('.control').click(function(){
             $('.first-box').toggle(4000);
         })
-
-
-        // let firstBox = document.querySelector('.first-box');
-
-        // let newElement = document.createElement("h1");
-
-        // let text = document.createTextNode("Welcome, Hello, Good bye");
-
-        // newElement.appendChild(text);
-
-        // let existingElement = document.querySelector('.hello');
-
-        // firstBox.insertBefore(newElement, existingElement);
 
     </script>
 </body>
