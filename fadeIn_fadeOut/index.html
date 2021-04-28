@@ -15,12 +15,11 @@
         }
 
         .anim{
-            background-color: green;
-            height: 30%;
-            width: 30%;
+            background-color: rgb(49, 0, 128);
+            height: 100%;
+            width: 100%;
             border: 1px solid hotpink;
-            /* transition: width, height, 0.5s; */
-            transition-duration: 2s;
+            display: none;
 
         }
 
@@ -36,16 +35,23 @@
         </div>
     </div>
 
-    <button onclick="emran()">Click</button>
+    <button onclick="emran()">Fade In</button>
+    <button class="fadeOut">Fade Out</button>
+    <button class="fadeToggle">Fade Toggle</button>
 
     <script src="jquery.min.js"></script>
     <script>
-        var anim = document.querySelector('.anim')
         function emran() {
-            anim.style.width = "70%"
-            anim.style.height = "60%"
-           
+            $('.anim').fadeIn(4000)
         }
+
+        $('.fadeOut').click(function() {
+            $('.anim').fadeOut(3000)
+        })
+
+        $('.fadeToggle').click(function() {
+            $('.anim').fadeToggle(3000)
+        })
     </script>
 </body>
 </html>
